@@ -1,0 +1,150 @@
+/* :root{
+    --gradient: radial-gradient(
+        #F7FFE5,
+        #E1ECC8,
+        #C4D7B2
+    );
+} */
+
+body{
+    /* background-image: var(--gradient); */
+    height: 100vh;
+    background: radial-gradient(at 10vh 10vh, #7cb6f5, #FAEDCD 100%);
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    min-width: 430px;
+}
+
+@keyframes bg_animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: center;
+    }
+    300% {
+        background-position: right;
+    }
+}
+
+.fake-body{
+    height: 100vh;
+    backdrop-filter: blur(50px);
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+
+nav{
+    padding: 5vh 5vh 0 5vh;
+    display: flex;
+    flex-direction: row;
+    max-width: 1800px;
+}
+
+.logo {
+    font-family: "Great Vibes", sans-serif;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.nav-side{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.about{
+    text-decoration: none;
+    color: black;
+    font-family: "Honken Grotesk", sans-serif;
+    font-weight: thin;
+}
+
+/* intro */
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 5vh;
+}
+
+.hi{
+    font-family: "Honken Grotesk", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+p{
+    font-family: "Honken Grotesk", sans-serif;
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+/* Quote */
+.quote-box{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vh 2vh 5vh;
+}
+
+.quote-width{
+    max-width: 50vh;
+}
+
+.quote{
+    font-family: "Honken Grotesk", sans-serif;
+    font-weight: thin;
+    font-size: 20px;
+}
+
+.author-box{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.author{
+    font-family: "Honken Grotesk", sans-serif;
+    font-weight: thin;
+    font-size: 20px;
+}
+
+/* Contact */
+
+.contact{
+    padding: 2vh 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1800px;
+}
+
+.con-ways{
+    text-decoration: none;
+    color: black;
+    font-family: "Honken Grotesk", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    padding-right: 5vh;
+}
+
+@media (max-width: 900px) {
+    .contact{
+        padding: 2vh 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.link:hover, :focus{
+    color:#D2E9E9;
+}
