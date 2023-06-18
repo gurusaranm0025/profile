@@ -79,10 +79,15 @@ nav{
     padding: 0 0 0 5vh;
 }
 
+.name{
+    color:#FAEDCD;
+}
+
 .hi{
     font-family: "Honken Grotesk", sans-serif;
     font-weight: 200;
     font-size: 25px;
+    color:#FAEDCD;
 }
 
 p{
@@ -99,13 +104,13 @@ p{
 }
 
 .quote-width{
-    max-width: 50vh;
+    max-width: 70vh;
 }
 
 .quote{
     font-family: "Honken Grotesk", sans-serif;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .author-box{
@@ -130,10 +135,10 @@ p{
 
 .con-ways{
     text-decoration: none;
-    color: black;
+    color: #213363;
     font-family: "Honken Grotesk", sans-serif;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 18px;
     padding-right: 5vh;
 }
 
@@ -146,5 +151,5 @@ p{
 }
 
 .link:hover, :focus{
-    color:#D2E9E9;
+    color:#A0C49D;
 }
