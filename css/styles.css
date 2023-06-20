@@ -1,29 +1,15 @@
 body{
-    /* background-image: var(--gradient); */
     height: 100vh;
-    /* background: radial-gradient(at 10vh 10vh, #7cb6f5, #FAEDCD 100%); */
-    background-image: radial-gradient(ellipse farthest-corner at 10vh 10vh, rgba(124, 184,245 , 1) 50%, rgba(250, 235, 205, 0.1 ));
+    background-image: radial-gradient(ellipse farthest-corner at 10vh 10vh, rgba(124, 184, 245 , 1) 50%, rgba(250, 235, 205, 0.1 ));
+    /* backdrop-filter: drop-shadow(50px, 50px, 50px, black); */
     padding: 0;
     margin: 0;
     line-height: 1.5;
     min-width: 430px;
 }
 
-@keyframes bg_animation {
-    0% {
-        background-position: left;
-    }
-    100% {
-        background-position: center;
-    }
-    300% {
-        background-position: right;
-    }
-}
-
 .fake-body{
     height: 100vh;
-    backdrop-filter: blur(50px);
     /* background-color: rgba(255, 255, 255, 0.4); */
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
@@ -43,7 +29,7 @@ nav{
 .logo {
     font-family: "Great Vibes", sans-serif;
     font-size: 30px;
-    color: black;
+    color: #181823;
     text-decoration: none;
 
 }
@@ -57,7 +43,7 @@ nav{
 
 .about{
     text-decoration: none;
-    color: black;
+    color: #181823;
     font-size: 20px;
 }
 
@@ -77,11 +63,13 @@ nav{
 
 .hi{
     font-size: 25px;
+    color: #181823;
 }
 
 p{
     font-size: 35px;
     margin-top: 15px;
+    color: #181823;
 }
 
 /* Quote */
@@ -97,6 +85,7 @@ p{
 
 .quote{
     font-size: 25px;
+    color: #181823;
 }
 
 .author-box{
@@ -106,6 +95,7 @@ p{
 
 .author{
     font-size: 20px;
+    color: #181823;
 }
 
 /* Contact */
@@ -119,10 +109,12 @@ p{
 
 .con-ways{
     text-decoration: none;
-    color: #213363;
-    font-size: 18px;
+    color: #181823;
+    font-size: 20px;
     padding-right: 5vh;
 }
+
+/* For Mobile */
 
 @media (max-width: 900px) {
     .contact{
@@ -130,10 +122,27 @@ p{
         display: flex;
         justify-content: center;
     }
-}
 
-.link:hover, :focus{
-    color:#F2BED1;
+    .hi{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .quote{
+        font-size: 20px;
+    }
+
+    .author{
+        font-size: 18px;
+    }
+
+    .con-ways{
+        font-size: 18px;
+    }
 }
 
 /* Fonts */
