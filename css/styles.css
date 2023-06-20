@@ -2,20 +2,24 @@ body{
     height: 100vh;
     background-image: radial-gradient(ellipse farthest-corner at 10vh 10vh, rgba(124, 184, 245 , 1) 50%, rgba(250, 235, 205, 0.1 ));
     /* backdrop-filter: drop-shadow(50px, 50px, 50px, black); */
+    backdrop-filter: brightness(80%);
+    background-size: cover;
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    min-width: 430px;
 }
 
 .fake-body{
     height: 100%;
     width: 100%;
     /* background-color: rgba(255, 255, 255, 0.4); */
-    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* min-width: 440px;
+    min-height: 990px; */
 }
 
 /* Navbar */
